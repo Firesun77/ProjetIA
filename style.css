@@ -1,0 +1,31 @@
+/* Style pour le plateau d'échecs */
+.plateau {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);  /* 8 colonnes de 50px */
+    grid-template-rows: repeat(8, 50px);     /* 8 lignes de 50px */
+    width: 400px;   /* Largeur totale de l'échiquier */
+    height: 400px;  /* Hauteur totale de l'échiquier */
+    border: 2px solid black;
+    margin: 0 auto;  /* Centre l'échiquier */
+}
+
+/* Style pour chaque case de l'échiquier */
+.case {
+    width: 50px;
+    height: 50px;
+}
+
+.case.blanche {
+    background-color: white;
+}
+
+.case.noire {
+    background-color: #4d4d4d;
+}
+
+/* Style pour les pièces */
+.piece {
+    font-size: 36px;
+    text-align: center;
+    line-height: 50px;  /* Aligne verticalement les pièces */
+}
